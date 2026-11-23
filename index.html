@@ -3,156 +3,202 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Discover stylish sneakers, shoes and sandals at Morbaks Footwear.">
+<meta name="description" content="Browse the footwear collection at Morbaks Footwear. Stylish shoes, sneakers and sandals for every occasion.">
 <title>Morbaks Footwear | Step Out in Style</title>
 <style>
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #222;
-  background: #fff;
-}
-header {
-  background: #111;
-  color: white;
-  padding: 22px;
-  text-align: center;
-}
+body { margin: 0; font-family: Arial, sans-serif; color: #222; background: #fff; }
+header { background: #111; color: white; padding: 22px; text-align: center; }
 header h1 { margin: 0; letter-spacing: 1.5px; }
 header p { margin-bottom: 0; }
-nav {
-  background: #292929;
-  padding: 15px;
-  text-align: center;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 12px;
-  display: inline-block;
-}
+nav { background: #292929; padding: 15px; text-align: center; }
+nav a { color: white; text-decoration: none; margin: 0 12px; display: inline-block; }
 nav a:hover { text-decoration: underline; }
-.hero {
-  background: #eee9e2;
-  padding: 65px 20px;
-  text-align: center;
-}
+.hero { background: #eee9e2; padding: 65px 20px; text-align: center; }
 .hero h2 { font-size: clamp(27px, 5vw, 38px); margin-top: 0; }
 .hero p { font-size: 18px; line-height: 1.5; }
-.products {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 42px 18px 55px;
-  text-align: center;
-}
-.products > h2 { margin: 0 0 28px; font-size: 28px; }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 22px;
-}
-.product {
-  border: 1px solid #e2e2e2;
-  border-radius: 12px;
-  padding: 12px 12px 20px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 4px 15px rgba(0,0,0,.05);
-}
-.product-image {
-  width: 100%;
-  height: 280px;
-  display: block;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 8px;
-  background: #eee9e2;
-}
-.product h3 { margin: 17px 0 9px; }
-.price {
-  font-weight: bold;
-  font-size: 18px;
-  margin: 0 0 15px;
-}
-button {
-  background: #111;
-  color: white;
-  border: 0;
-  padding: 13px 22px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 15px;
-}
+.products { max-width: 1200px; margin: 0 auto; padding: 42px 18px 55px; text-align: center; }
+.products > h2 { margin: 0 0 10px; font-size: 28px; }
+.collection-intro { color: #666; margin: 0 0 28px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 22px; }
+.product { border: 1px solid #e2e2e2; border-radius: 12px; padding: 12px 12px 20px; overflow: hidden; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,.05); }
+.product-image { width: 100%; height: 270px; display: block; object-fit: cover; object-position: center; border-radius: 8px; background: #eee9e2; }
+.product h3 { margin: 17px 0 9px; font-size: 17px; }
+.price { font-weight: bold; font-size: 17px; margin: 0 0 15px; }
+button { background: #111; color: white; border: 0; padding: 13px 22px; border-radius: 6px; cursor: pointer; font-size: 15px; }
 button:hover { background: #444; }
-footer {
-  background: #111;
-  color: white;
-  text-align: center;
-  padding: 25px;
-}
+footer { background: #111; color: white; text-align: center; padding: 25px; }
 footer p { line-height: 1.5; }
-@media (max-width: 480px) {
-  nav a { margin: 5px 9px; }
-  .hero { padding: 48px 18px; }
-  .product-image { height: 260px; }
-}
+@media (max-width: 480px) { nav a { margin: 5px 9px; } .hero { padding: 48px 18px; } .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } .product { padding: 8px 8px 14px; } .product-image { height: 190px; } .product h3 { font-size: 14px; } .product button { padding: 10px 12px; font-size: 13px; } }
 </style>
 </head>
 <body>
-
 <header>
   <h1>MORBAKS FOOTWEAR</h1>
   <p>Step Out in Style</p>
 </header>
-
 <nav aria-label="Main navigation">
   <a href="#home">Home</a>
   <a href="#shop">Shop</a>
   <a href="#contact">Contact</a>
 </nav>
-
 <section class="hero" id="home">
   <h2>Welcome to Morbaks Footwear</h2>
   <p>Discover stylish footwear for every occasion.</p>
   <a href="#shop"><button type="button">Shop Now</button></a>
 </section>
-
 <section class="products" id="shop">
-  <h2>Our Collection</h2>
+  <h2>Our Footwear Collection</h2>
+  <p class="collection-intro">Explore our styles and message us on WhatsApp to order.</p>
   <div class="grid">
 
     <article class="product">
-      <img class="product-image" src="IMG_3553.jpeg" alt="Brown and cream casual sneakers" loading="lazy">
-      <h3>Classic Sneakers</h3>
+      <img class="product-image" src="IMG_2839.jpeg" alt="Footwear Style 01 from Morbaks Footwear" loading="lazy">
+      <h3>Footwear Style 01</h3>
       <p class="price">Price on request</p>
-      <button type="button" onclick="order('Classic Sneakers')">Order Now</button>
+      <button type="button" onclick="order('Footwear Style 01')">Order Now</button>
     </article>
 
     <article class="product">
-      <img class="product-image" src="IMG_3476.jpeg" alt="Black leather loafers with decorative detail" loading="lazy">
+      <img class="product-image" src="IMG_2840.jpeg" alt="Footwear Style 02 from Morbaks Footwear" loading="lazy">
+      <h3>Footwear Style 02</h3>
+      <p class="price">Price on request</p>
+      <button type="button" onclick="order('Footwear Style 02')">Order Now</button>
+    </article>
+
+    <article class="product">
+      <img class="product-image" src="IMG_3360.jpeg" alt="Footwear Style 03 from Morbaks Footwear" loading="lazy">
+      <h3>Footwear Style 03</h3>
+      <p class="price">Price on request</p>
+      <button type="button" onclick="order('Footwear Style 03')">Order Now</button>
+    </article>
+
+    <article class="product">
+      <img class="product-image" src="IMG_3440.jpeg" alt="Footwear Style 04 from Morbaks Footwear" loading="lazy">
+      <h3>Footwear Style 04</h3>
+      <p class="price">Price on request</p>
+      <button type="button" onclick="order('Footwear Style 04')">Order Now</button>
+    </article>
+
+    <article class="product">
+      <img class="product-image" src="IMG_3468.jpeg" alt="Black Slides from Morbaks Footwear" loading="lazy">
+      <h3>Black Slides</h3>
+      <p class="price">Price on request</p>
+      <button type="button" onclick="order('Black Slides')">Order Now</button>
+    </article>
+
+    <article class="product">
+      <img class="product-image" src="IMG_3470.jpeg" alt="Logo Slides from Morbaks Footwear" loading="lazy">
+      <h3>Logo Slides</h3>
+      <p class="price">Price on request</p>
+      <button type="button" onclick="order('Logo Slides')">Order Now</button>
+    </article>
+
+    <article class="product">
+      <img class="product-image" src="IMG_3476.jpeg" alt="Classic Loafers from Morbaks Footwear" loading="lazy">
       <h3>Classic Loafers</h3>
       <p class="price">Price on request</p>
       <button type="button" onclick="order('Classic Loafers')">Order Now</button>
     </article>
 
     <article class="product">
-      <img class="product-image" src="IMG_3675.jpeg" alt="White strappy casual sandals" loading="lazy">
-      <h3>Fashion Sandals</h3>
+      <img class="product-image" src="IMG_3478.jpeg" alt="Ladies Flat Sandals from Morbaks Footwear" loading="lazy">
+      <h3>Ladies Flat Sandals</h3>
       <p class="price">Price on request</p>
-      <button type="button" onclick="order('Fashion Sandals')">Order Now</button>
+      <button type="button" onclick="order('Ladies Flat Sandals')">Order Now</button>
     </article>
 
+    <article class="product">
+      <img class="product-image" src="IMG_3480.jpeg" alt="Comfort Sandal from Morbaks Footwear" loading="lazy">
+      <h3>Comfort Sandal</h3>
+      <p class="price">Price on request</p>
+      <button type="button" onclick="order('Comfort Sandal')">Order Now</button>
+    </article>
+
+    <article class="product">
+      <img class="product-image" src="IMG_3484.jpeg" alt="Red Slides from Morbaks Footwear" loading="lazy">
+      <h3>Red Slides</h3>
+      <p class="price">Price on request</p>
+      <button type="button" onclick="order('Red Slides')">Order Now</button>
+    </article>
+
+    <article class="product">
+      <img class="product-image" src="IMG_3553.jpeg" alt="Casual Sneakers from Morbaks Footwear" loading="lazy">
+      <h3>Casual Sneakers</h3>
+      <p class="price">Price on request</p>
+      <button type="button" onclick="order('Casual Sneakers')">Order Now</button>
+    </article>
+
+    <article class="product">
+      <img class="product-image" src="IMG_3675.jpeg" alt="White Strap Sandals from Morbaks Footwear" loading="lazy">
+      <h3>White Strap Sandals</h3>
+      <p class="price">Price on request</p>
+      <button type="button" onclick="order('White Strap Sandals')">Order Now</button>
+    </article>
+
+    <article class="product">
+      <img class="product-image" src="IMG_3676.jpeg" alt="Everyday Sandals from Morbaks Footwear" loading="lazy">
+      <h3>Everyday Sandals</h3>
+      <p class="price">Price on request</p>
+      <button type="button" onclick="order('Everyday Sandals')">Order Now</button>
+    </article>
+
+    <article class="product">
+      <img class="product-image" src="IMG_3678.jpeg" alt="Designer Slides from Morbaks Footwear" loading="lazy">
+      <h3>Designer Slides</h3>
+      <p class="price">Price on request</p>
+      <button type="button" onclick="order('Designer Slides')">Order Now</button>
+    </article>
+
+    <article class="product">
+      <img class="product-image" src="IMG_3685.jpeg" alt="Double Strap Slides from Morbaks Footwear" loading="lazy">
+      <h3>Double Strap Slides</h3>
+      <p class="price">Price on request</p>
+      <button type="button" onclick="order('Double Strap Slides')">Order Now</button>
+    </article>
+
+    <article class="product">
+      <img class="product-image" src="IMG_3692.jpeg" alt="Casual Flip-Flops from Morbaks Footwear" loading="lazy">
+      <h3>Casual Flip-Flops</h3>
+      <p class="price">Price on request</p>
+      <button type="button" onclick="order('Casual Flip-Flops')">Order Now</button>
+    </article>
+
+    <article class="product">
+      <img class="product-image" src="IMG_3707.jpeg" alt="Burgundy Slides from Morbaks Footwear" loading="lazy">
+      <h3>Burgundy Slides</h3>
+      <p class="price">Price on request</p>
+      <button type="button" onclick="order('Burgundy Slides')">Order Now</button>
+    </article>
+
+    <article class="product">
+      <img class="product-image" src="IMG_3711.jpeg" alt="Comfort Sandals from Morbaks Footwear" loading="lazy">
+      <h3>Comfort Sandals</h3>
+      <p class="price">Price on request</p>
+      <button type="button" onclick="order('Comfort Sandals')">Order Now</button>
+    </article>
+
+    <article class="product">
+      <img class="product-image" src="IMG_3715.jpeg" alt="Pink Sandals from Morbaks Footwear" loading="lazy">
+      <h3>Pink Sandals</h3>
+      <p class="price">Price on request</p>
+      <button type="button" onclick="order('Pink Sandals')">Order Now</button>
+    </article>
+
+    <article class="product">
+      <img class="product-image" src="IMG_3716.jpeg" alt="Black Slides from Morbaks Footwear" loading="lazy">
+      <h3>Black Slides</h3>
+      <p class="price">Price on request</p>
+      <button type="button" onclick="order('Black Slides')">Order Now</button>
+    </article>
   </div>
 </section>
-
 <footer id="contact">
   <h2>Morbaks Footwear</h2>
   <p>Quality footwear. Outstanding style.</p>
   <p>Contact us on WhatsApp to place your order.</p>
 </footer>
-
 <script>
 function order(product) {
   const phone = "2348035116709";
@@ -161,6 +207,5 @@ function order(product) {
   window.open(url, "_blank");
 }
 </script>
-
 </body>
 </html>
